@@ -1,10 +1,11 @@
 '''
 Date - 1-07-2024
 Author -  data-divaa
-Question ------------------------------------------------
-	-
-	-
-	-
+Question -
+		1. maximum out of a list
+		2. minimum out of a list
+		3. reverse the nane
+		4. removing fifth character
 '''
 
 # to get the maximum out of a list manually
@@ -25,25 +26,25 @@ def minimum_manually(list2):
 
 #reversing my name
 def reversing_myname(name):
-	rev=0
+	rev=""
 	for i in range(len(name)-1,-1,-1):
-		rev_name = rev + i
-	return rev_name
+		rev = rev + name[i]
+	return rev
 
 # removing the fifth charcter of a string
+
 def remove_fifth(stri):
-	a = 4
 	p = ""
 	for i in range(len(stri)):
-		if a != i:
+		if char != i:
 			p = p + stri[i]
 	return p
 
 
 # Input the list
-#----------------------------------------add the list size also as input
 list1 = []
-for i in range(10):
+size = int(input("enter the number of elements you would like to have in the list:   "))
+for i in range(size):
 	num1 = int(input("enter number:"))
 	list1.append(num1)
 print("The list formed  with the given input is:  ")
@@ -56,10 +57,12 @@ print("maximum of the list is ", maximum_manually(list1))
 print("minumum of the list is ", minimum_manually(list1))
 
 
-#---------------------------------------make a user input for both below, then use print statement to print it.
+name = input("enter the name to be reversed :    ")
 
 #calling reverse name main function
-#reversing_myname("pihu")
+print("reversed given name : ", reversing_myname(name))
 
 # removing character
-#remove_fifth("hermione")
+char = int(input("enter thr index to be removed"))
+str1 = input("enter the string whose character is to be removed:"   )
+print("after the removal of", char,"character string looks like this",remove_fifth(str1))
