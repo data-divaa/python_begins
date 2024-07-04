@@ -1,6 +1,28 @@
-list1 = [4,1,3,2]
-for i in range(len(list1)):
-    for a in range(i+1):
-        if list1[i] < list1[a]:
-            list1[i],list1[a] = list1[a],list1[i]
-print(list1)
+
+
+
+ik = input("enter comma seperateed input:")
+
+
+
+
+
+
+
+
+
+ik1 = list(ik)
+
+ik1 = tuple(ik)
+print(ik1)
+print(ik1)
+
+
+
+
+
+
+def change_list(ik):
+    ik1 = list(ik)
+    for i in ik1:
+        if ik1[i] == ',':
