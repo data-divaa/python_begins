@@ -26,3 +26,51 @@ def change_list(ik):
     ik1 = list(ik)
     for i in ik1:
         if ik1[i] == ',':
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+elif  choice == '-':
+    result = num1 +num2
+elif choice == '*':
+    result = num1 * num2
+elif choice == '/':
+    result = num1 / num2
+elif choice == '%':
+    result = num1 / num2
+elif choice == '**':
+    result = num1**num2
+elif choice == '+':
+    result = num1 +num2
+else:
+    print("invalid choice")
+
+return result
