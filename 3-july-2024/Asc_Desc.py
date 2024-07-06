@@ -5,7 +5,7 @@ question - arranging the list into ascending and descending order
 '''
 
 
-# defining main function for ascending order sorting of a list
+# defining function for ascending order sorting of a list
 def arrange_asecnding(your_list):
     for i in range(len(your_list)):
         for k in range(i+1):
@@ -14,7 +14,7 @@ def arrange_asecnding(your_list):
     return your_list
 
 
-# defining main function for descending order sorting of a list
+# defining function for descending order sorting of a list
 def arrange_descending(your_list):
     for a in range(len(your_list)):
         for b in range(a+1):

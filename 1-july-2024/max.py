@@ -41,28 +41,28 @@ def remove_fifth(stri):
 	return p
 
 
-# Input the list
-list1 = []
-size = int(input("enter the number of elements you would like to have in the list:   "))
-for i in range(size):
-	num1 = int(input("enter number:"))
-	list1.append(num1)
-print("The list formed  with the given input is:  ")
-
-# calling maximum_manualy function
-print("maximum of the list is ", maximum_manually(list1))
-
-
-#calling minimum function
-print("minumum of the list is ", minimum_manually(list1))
-
-
-name = input("enter the name to be reversed :    ")
-
-#calling reverse name main function
-print("reversed given name : ", reversing_myname(name))
-
-# removing character
-char = int(input("enter thr index to be removed"))
-str1 = input("enter the string whose character is to be removed:"   )
-print("after the removal of", char,"character string looks like this",remove_fifth(str1))
+# # Input the list
+# list1 = []
+# size = int(input("enter the number of elements you would like to have in the list:   "))
+# for i in range(size):
+# 	num1 = int(input("enter number:"))
+# 	list1.append(num1)
+# print("The list formed  with the given input is:  ")
+#
+# # calling maximum_manualy function
+# print("maximum of the list is ", maximum_manually(list1))
+#
+#
+# #calling minimum function
+# print("minumum of the list is ", minimum_manually(list1))
+#
+#
+# name = input("enter the name to be reversed :    ")
+#
+# #calling reverse name main function
+# print("reversed given name : ", reversing_myname(name))
+#
+# # removing character
+# char = int(input("enter thr index to be removed"))
+# str1 = input("enter the string whose character is to be removed:"   )
+# print("after the removal of", char,"character string looks like this",remove_fifth(str1))
