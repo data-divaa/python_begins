@@ -74,3 +74,6 @@ while True:
     num2 = float(input("enter another number "))
     print("")
     print(calculator(choice))
+
+
+print(reversing_name(first_name),reversing_name(last_name))
