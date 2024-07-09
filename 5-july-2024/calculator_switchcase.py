@@ -5,59 +5,7 @@ Question -
         make a calculator through switch case
 '''
 
-#definig addition function
-def add():
-    return num1 + num2
 
-#defining subtraction function
-def sub():
-    return num1 - num2
-
-#defiing multiplication function
-def multi():
-    return num1 * num2
-
-#definig division function
-def div():
-    return num1 / num2
-
-#defining exponent function
-def expo():
-    return num1 ** num2
-
-#defining floor division function
-def floor():
-    return num1 % num2
-
-#defining exit function
-def exit():
-    return "existing the calculator"
-
-#defing default function
-def default():
-    return "invalid choice"
-
-
-#calling the calculator function
-def calculator(choice):
-
-    switch = {
-        '+' : add,
-        '-' : sub,
-        '*' : multi,
-        '/' : div,
-        '**': expo,
-        '%' : floor,
-        'end' : exit
-        }
-    #comment
-    '''
-    get - used to associated key (here choice) and value (here function) if available
-    default - is nothing matches default will work
-    () - to call function called through switch.get(choice)
-    '''
-    #return statement
-    return switch.get(choice,default)()
 
 
 # taking arithemtics choice
