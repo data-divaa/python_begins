@@ -1,76 +1,24 @@
+def between_dates(date1,date2):
+    date1 = datetime.strptime(a,"%d-%m-%Y")
+    date2 = datetime.strptime(b,"%d-%m-%Y")
+
+    diff = date1 - date2
+    print("diffrence in days is :")
+    return diff.days
+
+
+from datetime import datetime
+a = input("enter date (dd/mm/yyyy) ")
+b = input("enter another date (dd/mm/yyyy) ")
+
+print(between_dates(a,b))
 
 
 
-ik = input("enter comma seperateed input:")
+month1 = int(date1.strftime("%m"))
+month2 = int(date2.strftime("%m"))
+for j in range(month1-1,month2-1 ):
 
 
-
-
-
-
-
-
-
-ik1 = list(ik)
-
-ik1 = tuple(ik)
-print(ik1)
-print(ik1)
-
-
-
-
-
-
-def change_list(ik):
-    ik1 = list(ik)
-    for i in ik1:
-        if ik1[i] == ',':
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-elif  choice == '-':
-    result = num1 +num2
-elif choice == '*':
-    result = num1 * num2
-elif choice == '/':
-    result = num1 / num2
-elif choice == '%':
-    result = num1 / num2
-elif choice == '**':
-    result = num1**num2
-elif choice == '+':
-    result = num1 +num2
-else:
-    print("invalid choice")
-
-return result
+diff_date = abs(date1 - date2).days
+days = days + diff_date

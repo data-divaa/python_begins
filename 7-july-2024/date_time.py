@@ -9,4 +9,5 @@ question -
 
 from datetime import datetime
 date_time = datetime.now()
-print("current date and time ", date_time)
+new = date_time.strftime("%d-%m-%Y" " " "%H:%M")
+print("current date and time ", new)

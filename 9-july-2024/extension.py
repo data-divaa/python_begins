@@ -18,7 +18,7 @@ def extension(filename):
         return a
 
 # taking input
-filename = input("please enter your filename : ")
+filename = input("please enter your filename (filename can only be a-zA-Z_-): ")
 
 
 #calling the function
