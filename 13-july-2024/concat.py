@@ -9,8 +9,8 @@ Question -
 # defining the function
 def concat(lst):
     string = ''
-    for j in range(len(lst)): #every element of lst will be added to string one by one
-        string = string + lst[j]
+    for j in lst: #every element of lst will be added to string one by one
+        string = string + j
     return string
 
 #taking input
