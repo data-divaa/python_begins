@@ -5,6 +5,7 @@ Question -
 write a program to take a list as input, as well as 2 index values.
 Then swap those two index values with each other, without using a third list
 '''
+import sys
 
 #defining function
 def swap(lst,index1,index2):
@@ -15,9 +16,20 @@ def swap(lst,index1,index2):
 
 #taking inputs
 lst = list(input("enter list(separted by sapces) : " ).split())
-index1 = int(input("enter index :"))
-index2 = int(input("enter index :"))
+print ("the entered list is : ", lst)
 
+index1 = int(input("enter index of the element you want to swap from the above list : "))
+#input validation
+if (index1 > len(lst)-1):
+    print("The entered index is out of bounds...exiting program")
+    sys.exit()
+
+
+index2 = int(input("enter index of the element you want to swap with from the above list : "))
+#input validation
+if (index2 > len(lst)-1):
+    print("The entered index is out of bounds...exiting program")
+    sys.exit()
 
 #calling main function
-print(swap(lst,index1,index2))
+print("The new list after swapping of element ",index1," with ",index2," is : ",swap(lst,index1,index2))

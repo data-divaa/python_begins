@@ -19,6 +19,6 @@ def count(lst,num):
 #taking input
 lst = list(input("enter the list with space as seperator and make sure list elements are integer : ").split())
 #in the above line we used string as the data type as it will have work with all of the data type as int asd float without any error
-num = (input("enter thr number: ")
+num = input("enter the number to be counted : ")
 
 print(count(lst,num))

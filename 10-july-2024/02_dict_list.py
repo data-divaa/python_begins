@@ -4,18 +4,20 @@ Author - Data-Divaa
 Question -
 a dictionary using two lists inputted by user.
 '''
-
+import sys
 
 def dict_list(list1,list2):
     dict1 = {}
-    if len(list1) != len(list2):
-        print("make sure you are entering same number of key value pair")
-    else:
-        for i in range(len(list1)):
-            dict1[list1[i]] = list2[i]
+    #iterate over both the list and form a key-value pair
+    for i,j in zip(list1, list2):
+        dict1[i] = j
     return dict1
 
-list1 = list(input("list1: ").split())
-list2 = list(input("list2: ").split())
+list1 = list(input("Input the list containing keys : ").split())
+list2 = list(input("Input the list containing values : ").split())
+#input validation
+if len(list1) != len(list2):
+    print("Both the lists should contain the same number of elements...exiting program")
+    sys.exit()
 
-print(dict_list(list1,list2))
+print("The new dictionary is ", dict_list(list1,list2))

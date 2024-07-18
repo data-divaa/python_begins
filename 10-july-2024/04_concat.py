@@ -14,7 +14,7 @@ def concat(lst):
     return string
 
 #taking input
-lst = list(input("enter the list separted by space").split())
+lst = list(input("enter the list separted by space : ").split())
 
 #calling function
-print(concat(lst))
+print("the entered list makes a word", concat(lst))
