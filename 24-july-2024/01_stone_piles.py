@@ -24,30 +24,22 @@ import sys
 
 #defining the function
 def stone_pile(StonePile):
+    StonePile = StonePile
     stones = []
-    if int(StonePile) % 2 == 0:# if StonePile is even then
+    if StonePile % 2 == 0:# if StonePile is even then
     # in loop range starts from Stonepile and goes up to n+(2*n) so that it could go around upto desirable length with step of 2
-        for i in range(int(StonePile),int(StonePile)+(2*int(StonePile)),2):
+        for i in range(StonePile,(StonePile+(2*StonePile)),2):
             stones.append(i)
     else:#if not this conditions follows
     #loop is same but condtion differs as it is for odd ones
-        for k in range(int(StonePile),int(StonePile)+(2*int(StonePile)),2):
+        for k in range(StonePile,(StonePile+(2*StonePile)),2):
             stones.append(k)
     return stones
 
 
 #taking inputs
 print("--------ENTER INTEGER ONLY-----------")
-StonePile = input("Enter the number of Stone Piles : ")
-#input validation
-
-for j in StonePile:
-    #every character of StonePile changes into ascii value and then goes through the conditions
-    # it was required to use as ord takes only one character
-    ascii_StonePile = ord(j)
-    if not(48 <= ascii_StonePile <= 57):
-        print("Invalid Entry--------Exiting Program")
-        sys.exit()
+StonePile = int(input("Enter the number of Stone Piles : "))
 
 # showing inputs
 print("------------------------------------------------------")
@@ -55,5 +47,5 @@ print("total number of stones piles = ",StonePile)
 
 
 #calling function
-print("number of stones in ",StonePile,"stone piles if first stone pile has ",StonePile,"is")
+print("number of stones in ",StonePile," stone piles if first stone pile has ",StonePile,"is")
 print(stone_pile(StonePile))
