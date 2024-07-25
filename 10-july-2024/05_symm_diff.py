@@ -19,9 +19,10 @@ def symm_diff(list1,list2):
 
 
 #taking inputs
+print("symmetric difference shows a set which contains the elements which are either in set A or in set B but not in both")
 list1 = list(input("enter the first list").split())
 list2 = list(input("enter the second list").split())
 
 
 # calling function
-print(symm_diff(list1,list2))
+print("elements that are not common are : ",symm_diff(list1,list2))

@@ -21,9 +21,10 @@ def union (list1,list2):
 
 
 #taking inputs
+print("union of set presents a set which have all the elements present in both the set eliminating duplicates")
 list1 = list(input("enter the first list ").split())
 list2 = list(input("enter the second list ").split())
 
 
 #calling function
-print(union(list1,list2))
+print("common elements of both the sets are: ",union(list1,list2))

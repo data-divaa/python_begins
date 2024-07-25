@@ -5,16 +5,17 @@ Question -
 - Write a program that takes a list from the user as input. then concat that list elements to a string and print
 '''
 
-
-# defining the function
+#defining the function
 def concat(lst):
     string = ''
-    for j in lst: #every element of lst will be added to string one by one
-        string = string + j
+    for i in lst:
+        string = string + i
     return string
 
-#taking input
-lst = list(input("enter the list separted by space : ").split())
 
-#calling function
-print("the entered list makes a word", concat(lst))
+#taking inputs
+lst = list(input("enter the list to be joined together(separated by space): ").split())
+print("list entered looks like this : ",lst)
+
+#calling the function
+print("after joining the list looks like this: ",concat(lst))

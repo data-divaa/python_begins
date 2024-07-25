@@ -7,17 +7,20 @@ Take two lists from user as input. Perform set operation difference on them
 
 #defining the function
 def difference(list1,list2):
-    diff_list = []# taking a empty list fro furthur need
-    for i in list1: # we needed range and len for easy accesing of index and value
-        if i not in list2:# if ith element of list1 is not present in list2
-            diff_list.append(i)# it gets appended into the empty list formed earlier
-    diff_set = set(diff_list)#here we are change the list into set we could have did it earlier but working with list much more flexible
+    diff_list = []
+    for i in list1:
+        if i not in list2: #if i is not in list
+            diff_list.append(i)# the element gets added to the empty list formed earlier
+    diff_set = set(diff_list)#list converted to set
     return diff_set
 
-#taking inputs
-list1 = list(input("enter the first list ").split())
-list2 = list(input("enter the second list ").split())
 
+print("set difference shows the elements uniquely present in the first set")
 
-#calling the function
-print(difference(list1,list2))
+list1 = list(input("enter the first set(separated by space) : ").split())
+list2 = list(input("enter the second set(separated by space): ").split())
+
+print("first entered set : ",list1)
+print("second entered set : ",list2)
+
+print("after the difference operation: ",difference(list1,list2))

@@ -5,20 +5,33 @@ Question -
 Input a list from user, and input a number.
 Count how many times that number occurs in the list and print it. Do not use any API
 '''
-
-#definig the function
+import sys
+#defining the function
 def count(lst,num):
-    #taking times as 0 so that when iteration found we can perform operation
+    # times is taken as 0 for furthur use
     times = 0
-    for i in lst: #we could have use range but here we did not because it will work just fine(don't mind it its for my understanding)
-        if i == num:#if ith element of lst have the number to counted
-            times = times + 1 # times will have 1 added to it
+    for i in lst:
+        if i == num:#if i is equal to num
+            times = times + 1 # 1 addes to times for count
     return times
 
 
-#taking input
-lst = list(input("enter the list with space as seperator and make sure list elements are integer : ").split())
-#in the above line we used string as the data type as it will have work with all of the data type as int asd float without any error
-num = input("enter the number to be counted : ")
+#taking inputs
+lst = list(input("enter the list(make sure it containes integer) separted by space").split())
+#input validation
+for k in lst:
+    ascii_value = ord(k)#each element of lst is changed into its ascii value
+    if not(48 <= ascii_value <= 57):# if the ascii_value exceeds the parameters following steps are taken
+        print("invalid integer ... existing the program")
+        sys.exit()#if the if statement comes true program is exited
+print("list entered :",lst)
 
-print(count(lst,num))
+num = input("enter the number to be counted : ")
+#input validation
+value = ord(num)# the num is also changed ascii
+if not (48 <= value <= 57):
+    print("invalid number .... exiting the program")
+    sys.exit()
+
+#calling function
+print("number of times ",num,"appeared in the list is ",count(lst,num))
