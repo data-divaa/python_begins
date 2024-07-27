@@ -20,11 +20,10 @@ Output:
 [17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49]
 '''
 
-import sys
+
 
 #defining the function
 def stone_pile(StonePile):
-    StonePile = StonePile
     stones = []
     if StonePile % 2 == 0:# if StonePile is even then
     # in loop range starts from Stonepile and goes up to n+(2*n) so that it could go around upto desirable length with step of 2
