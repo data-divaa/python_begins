@@ -13,7 +13,7 @@ Output:
 
 #defining the function
 def palindrome(string_list):
-    result = []#empty list for furthut opeartions
+    result = []#empty list for furthur opeartions
     for i in string_list:
         a = ""
         for k in range(len(i)-1,-1,-1):#this loop changes each element of the list into reverse
