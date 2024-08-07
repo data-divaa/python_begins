@@ -19,7 +19,7 @@ def arrange_descending(your_list):
     for a in range(len(your_list)):
         for b in range(a+1):
             if your_list[a] > your_list[b] :
-                your_list[a] ,  your_list[b] = your_list[a] , your_list[b]
+                your_list[a] ,  your_list[b] = your_list[b] , your_list[a]
     return your_list
 
 
