@@ -26,6 +26,7 @@ def second_lowest(record):
             if record[j][1] > record[j+1][1]:#through indexing record is arranged in ascending from
                 record[j],record[j+1] = record[j+1],record[j]#arrangement in order
     no_dulpicate = []
+    #chnage to set
     for t in record:
     #if the 2nd element of nested list is not in no_dulpicate then only the the seconde element is extracted and putted inside no_dulpicate
         if t[1] not in [x[1] for x in no_dulpicate]:
