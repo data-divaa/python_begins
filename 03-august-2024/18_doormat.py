@@ -20,15 +20,14 @@ def doormat(n,m):
         #above make sures that the print goes half way of total length and make it even for desirable result
         print((a*(2*i+1)).center(m,"-"))
 
-
     #welcome part
     print(("WELCOME").center(m,"-"))
-
 
     #bottom half
     #same logic of upper half goes here but reverseing the order
     for k in range((n-1)//2-1,-1,-1):
         print((a*(2*k+1)).center(m,"-"))
+
 
 
 #taking inputs
