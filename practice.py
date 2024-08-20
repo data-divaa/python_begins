@@ -1,4 +1,3 @@
-lines= ['aas','sdasd']
-n = 5
-for i in lines:
-    print(("-".join(i)).center((n+(n-1)+((n-1)*2)),"-"))
+1. C 2. D 3. D 4. C 5. D
+6. A 7. D 8. C 9. D 10. B
+11. B 12. C 13. A 14. B 15. B

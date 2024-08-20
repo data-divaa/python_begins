@@ -26,3 +26,10 @@ n = int(input("enter the number to check if even or odd :"))
 
 
 weird_notweird(n)
+
+
+
+a = input()
+aa =a.split()
+if aa[0][0].islower():
+    for i in aa:
