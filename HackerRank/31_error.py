@@ -3,11 +3,7 @@ Date - 27- august- 2024
 Aurthur - Data-Divaa
 Question - print the error if occurede betwen valueerror or zeroerror
 '''
-'''
-Date - 27- august- 2024
-Aurthur - Data-Divaa
-Question - take 2 input and do their integer division if any error print the error
-'''
+
 
 def error(x):
     for k in x:
