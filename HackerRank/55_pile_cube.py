@@ -1,3 +1,13 @@
+'''
+Date - 08 - September- 2024
+Aurthur - Data-Divaa
+Question -
+there is a horizontal row of n cubes. the length of each cube is given. you need to create
+a new vertical pile of cube . the new pile should follow these directions:if
+cub[i] is on top of cube[j] then sidelength[j] >= sidelength[i].
+when stacking the cubes. you can only pick either the leftmost or the rightmost
+cube each time. print yess if it is possible to stack the cube otherwise print no
+'''
 from collections import deque
 
 t = int(input("enter the number of test case:"))
