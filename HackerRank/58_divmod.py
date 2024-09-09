@@ -1,5 +1,5 @@
 '''
-Date - 08 - September- 2024
+Date - 08- September- 2024
 Aurthur - Data-Divaa
 Question - take two numbers and print their intger division
 modulo operator
