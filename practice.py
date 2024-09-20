@@ -1,32 +1,19 @@
-iimport re
+import re
 
-def change(s):
-    if s.group() == " && ":
-        return " and "
-    elif s.group() == " || ":
-        return " or "
-    else :
-        return s.group()
+def color_code(code):
+    # Corrected the regex to match either 3 or 6 digit hex color codes
+    ex = r"(#[0-9a-fA-F]{3}|#[0-9a-fA-F]{6})(?=[^a-zA-Z0-9-])"
+    result = []
 
-def substitution(lines):
-    ex = r"\s&&\s|\s\|\|\s"
-    output= []
-    for i in lines:
-        check = re.search(ex,i)
-        if check:
-            new_line = re.sub(ex,change,i)
-            output.append(new_line)
-        else:
-            output.append(i)
-    for _ in output:
-        print(_)
+    for i in code:
+        match = re.findall(ex, i)
+        if match:
+            result.extend(match)  # Use match.group() to get the matched string
 
+    for k in result:
+        print(k)
 
-
-n = int(input())
-lines = []
-for i in range(n):
-    lines.append(input())
-
-
-substitution(lines)
+# Get the number of lines
+n = int(input("Enter the number of lines of code: "))
+code = [input() for _ in range(n)]  # Collect input lines
+color_code(code)
