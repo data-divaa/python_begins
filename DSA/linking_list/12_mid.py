@@ -35,7 +35,7 @@ head.next.next = Node(90)
 head.next.next.next = Node(100)
 
 
-print("Linked lsit:")
+print("Linked list:")
 printList(head)
 
 

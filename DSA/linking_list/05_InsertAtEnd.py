@@ -9,7 +9,7 @@ def EndInsert(head,key):
     curr = head
     while curr.next != None:
         curr = curr.next
-    curr.next = Node(key)
+    curr.next = Node(key)#create a new node for new next entry
     return head
 
 
